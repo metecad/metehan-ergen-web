@@ -1,0 +1,1 @@
+<?php include_once("C:\Users\mete9\Desktop\personal_web_page\index.html"); ?>
