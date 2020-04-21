@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        
-        
-        
+
+
+
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
-        
+
  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
-        
+
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        
+
         <title>Metehan Ergen</title>
-    
+
     </head>
     <body>
         <header>
@@ -67,8 +68,8 @@
                         Here are a few technologies I've been working with recently:
                     </p>
                  </div>
-             
-                
+
+
                 <div class="profile-picture">
                     <img src="resources/img/IMG_8866.jpg" >
                 </div>
@@ -81,33 +82,33 @@
                     <li class="tech">QGIS</li>
                     <li class="tech">PostgreSQL/Postgis</li>
                     <li class="tech">Matlab</li>
-                
+
                 </ul>
             </div>   
-            
+
          </section>
     <!---------------------------------------------------------------------------------------------------------->
-        
-      
+
+
         <section class="section-map" id="map">
-            
+
             <div class="row">
                 <h3>
                     Map 
                 </h3>
-                
+
             </div>
             <div class="row">
                 <p class="map-text">
                     This is the map that shows the cities I visited abroad.
-                
+
                 </p>
             </div>
             <div class="row">  
                  <div id="mapid"></div>
                 <script>
                     var mymap = L.map('mapid').setView([45.464203, 9.189982], 4);
-                    
+
                     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
                     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
                     maxZoom: 18,
@@ -116,7 +117,7 @@
                     zoomOffset: -1,
                     accessToken: 'pk.eyJ1IjoibWV0ZWNhZCIsImEiOiJjazk4ajVzMTMwMnNvM2xwNDZudm9zN2hkIn0.wo1nOfOl43XfdCGl_USY6w'
                 }).addTo(mymap);
-                    
+
                     var marker = L.marker([45.464203, 9.189982]).addTo(mymap);
                     var marker = L.marker([45.068371, 7.683070]).addTo(mymap);
                     var marker = L.marker([45.440845, 12.315515]).addTo(mymap);
@@ -141,21 +142,21 @@
                     var marker = L.marker([45.4404, 10.99]).addTo(mymap);
                     var marker = L.marker([44.41, 8.93]).addTo(mymap);
                     var marker = L.marker([44.5004, 11.34]).addTo(mymap);
-                    
+
                     var circle = L.circle([41.725, 44.7908], {
                         color: '#e67e22',
                         fillColor: '#f03',
                         fillOpacity: 0.5,
                         radius: 100000
                     }).addTo(mymap);
-                    
+
                      var circle = L.circle([40.3953, 49.8622], {
                         color: '#e67e22',
                         fillColor: '#f03',
                         fillOpacity: 0.5,
                         radius: 100000
                     }).addTo(mymap);
-                    
+
                     var popup = L.popup();
 
                     function onMapClick(e) {
@@ -166,14 +167,14 @@
                     }
 
                     mymap.on('click', onMapClick);
-                    
+
                  </script>
             </div>
-        
+
         </section>
-   
+
  <!---------------------------------------------------------------------------------------------------------->        
-        
+
         <section class="section-form" id="contact">
             <div class="row" id="deneme">
                 <h2>Contact</h2>
@@ -194,7 +195,7 @@
                             <input type="email" name="email" id="email" placeholder="Your email" required>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="message">Your message</label>
@@ -203,7 +204,7 @@
                             <textarea name="message" id="message" placeholder="Your message"></textarea>
                         </div>
                     </div>
-                    
+
                      <div class="row">
                         <div class="col span-1-of-3">
                             <label>&nbsp;</label>
@@ -212,8 +213,8 @@
                             <input type="submit" value="Send">
                         </div>
                     </div>
-             
-                    
+
+
                 </form>
                 <div class="row">
                     <ul class="social-links">
@@ -221,23 +222,23 @@
                         <li class="icon"><a href="https://www.linkedin.com/in/metehan-e-b7582816b" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                         <li class="icon"><a href="https://github.com/metecad" target="_blank"><ion-icon name="logo-github" ></ion-icon></a></li>
                         <li class="icon"><a href="https://codepen.io/metecad" target="_blank" ><ion-icon name="logo-codepen"  ></ion-icon></a></li>
-                        
-                      
+
+
 
                 </ul>
 
         </div>
 
-            
+
             </div>
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         </section>
-        
+
     <!------------------------FOOTER---------------------------------------------------------------------------------->
         <footer>
             <div class="row">
@@ -252,7 +253,7 @@
 
 
         </footer>
-   
+
     </body>
     
 </html>
