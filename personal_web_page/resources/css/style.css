@@ -263,19 +263,19 @@ header {
     margin-left: 100px;
 }
 
-.pp {
-    height: 50%;
-    width: 50%;
+.profile-picture img{
+    height: 110%;
+    width: 110%;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
-    width: 100%;
     background-color: rgb(100, 255, 218);
     margin-left: 0px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     border-radius: 3px;
+    
 }
+ 
 /* -----------------------------MAP-------------------------- */   
 #mapid { height: 450px;
-         width 100%;
         margin-top: 20px;
         border-style:solid;
         border-radius: 10px;
@@ -307,7 +307,7 @@ header {
 input,
 select,
 textarea {
-    width 100%;
+
     padding: 7px;
     border-radius: 3px;
 }
@@ -325,9 +325,7 @@ textarea {
     font-size: 250%;
 }
 
-ion-icon {
-  color: #585858;
-}
+
 
 /* -----------------------------FOOTER-------------------------- */
 
@@ -360,4 +358,3 @@ ion-icon {
     border-style: solid;
     
 }
-
